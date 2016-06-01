@@ -1,0 +1,21 @@
+{
+    "name": "artesaos/moip-subscriptions",
+    "description": "MoIP Subscriptions PHP Client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Hernandes",
+            "email": "diego@hernandev.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "artesaos/restinga": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Artesaos\\MoIPSubscriptions\\": "src/"
+        }
+    }
+}
