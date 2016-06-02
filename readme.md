@@ -4,8 +4,26 @@
 
 A Presente biblioteca cliente visa facilitar a integração / implementação da API de Assinaturas em projetos PHP.
 
-#### Sobre o Projeto
+### Sobre o Projeto
 O Projeto utiliza o framework ActiveResource **[Restinga](https://github.com/artesaos/restinga)**.
+
+### Status
+Status atual da Cobertura do Pacote
+
+| Endpoint                            | Progresso Implementação    | Progresso Documentação |
+| ----------------------------------- | -------------------------- | ---------------------- |
+| `coupons` (Cupons)                  | 100%                       | 100%                   |
+| `plans` (Planos)                    | 100%                       | 0%                     |
+| `customers` (Clientes)              | 100%                       | 0%                     |
+| `subscriptions` (Assinaturas)       | 100%                       | 0%                     |
+| `- invoices` (Faturas)              | 75%                        | 0%                     |
+| `--- payments` (Pagamentos)         | 100%                       | 0%                     |
+| `--- retries` (Re-rentativas)       | 0%                         | 0%                     |
+| `users/preferences` (Preferências)  | 0%                         | 0%                     |
+
+
+
+
 
 ### Instalação
 Para instalar a biblioteca **moip-subscriptions**, você deve utilizar o composer para incluí-la como dependência em seu projeto.
@@ -157,24 +175,3 @@ $coupon->inactivate();
 #### Associação em assinaturas
 
 Apesar dessa opção estar lista da documentação oficial na aba de cupons, o mesmo é feito através do endpoint **subscriptions** por isso será documentada posteriormente na sessão adequada.
-
-
-### Planos
-
-@todo Documentar API de Planos
-
-### Clientes
-
-@todo Documentar API de Clientes
-
-### Assinaturas
-
-@todo Documentar API de Assinaturas
-
-#### Assinatura: Fatura
-
-@todo Documentar API das Faturas de um Assinatura 
-
-##### Assinatura: Fatura: Pagamento
-
-@todo Documentar API de Pagamentos em uma Fatura de um Assinatura
