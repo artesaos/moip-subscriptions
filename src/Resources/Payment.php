@@ -11,7 +11,7 @@ class Payment extends Resource
 {
     // send and receive data in JSON.
     use SendJson, ReceiveJson;
-    
+
     // receive errors in JSON.
     use ReceiveJsonErrors;
 
@@ -29,6 +29,4 @@ class Payment extends Resource
 
     // empty resource name when single item
     protected $item_root = null;
-
-    
 }

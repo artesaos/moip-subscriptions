@@ -7,11 +7,26 @@ use Artesaos\Restinga\Http\Format\Receive\ReceiveJson;
 use Artesaos\Restinga\Http\Format\Receive\ReceiveJsonErrors;
 use Artesaos\Restinga\Http\Format\Send\SendJson;
 
+/**
+ * Class Customer.
+ *
+ * @property    string  code                Identificador do cliente na sua aplicação.
+ * @property    string  fullname	        Nome completo do cliente.
+ * @property    string  email               Email do cliente.
+ * @property    string  cpf                 CPF do cliente.
+ * @property    string  phone_area_code     Código de área do telefone do titular (DDD).
+ * @property    string  phone_number        Telefone do titular.
+ * @property    string  birthdate_day       Dia do nascimento. Válido 01 a 31.
+ * @property    string  birthdate_month     Mês do nascimento. Válido 01 a 12.
+ * @property    string  birthdate_year      Ano do nascimento. 4 dígitos.
+ * @property    array   address             Array com os atributos do endereço.
+ * @property    string  billing_info		Dados de pagamento desse cliente.
+ */
 class Customer extends Resource
 {
     // send and receive data in JSON.
     use SendJson, ReceiveJson;
-    
+
     // receive errors in JSON.
     use ReceiveJsonErrors;
 
@@ -49,10 +64,13 @@ class Customer extends Resource
     }
 
     /**
-     * @param $holderName
-     * @param $cardNumber
-     * @param $expirationMonth
-     * @param $expirationYear
+     * Updates the customer credit card information.
+     *
+     * @param string $holderName
+     * @param string $cardNumber
+     * @param string $expirationMonth
+     * @param string $expirationYear
+     *
      * @return bool
      */
     public function updateCreditCard($holderName, $cardNumber, $expirationMonth, $expirationYear)
@@ -65,6 +83,7 @@ class Customer extends Resource
                 'expiration_year' => $expirationYear,
             ],
         ];
+
         return $this->makeRequest('put', true, '/billing_infos', json_encode($cardData));
     }
 }

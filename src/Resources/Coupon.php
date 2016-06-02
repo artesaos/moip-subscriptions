@@ -11,7 +11,7 @@ class Coupon extends Resource
 {
     // send and receive data in JSON.
     use SendJson, ReceiveJson;
-    
+
     // receive errors in JSON.
     use ReceiveJsonErrors;
 
