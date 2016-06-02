@@ -153,3 +153,28 @@ $coupon->activate();
 // desativar
 $coupon->inactivate();
 ```
+
+#### Associação em assinaturas
+
+Apesar dessa opção estar lista da documentação oficial na aba de cupons, o mesmo é feito através do endpoint **subscriptions** por isso será documentada posteriormente na sessão adequada.
+
+
+### Planos
+
+@todo Documentar API de Planos
+
+### Clientes
+
+@todo Documentar API de Clientes
+
+### Assinaturas
+
+@todo Documentar API de Assinaturas
+
+#### Assinatura: Fatura
+
+@todo Documentar API das Faturas de um Assinatura 
+
+##### Assinatura: Fatura: Pagamento
+
+@todo Documentar API de Pagamentos em uma Fatura de um Assinatura
