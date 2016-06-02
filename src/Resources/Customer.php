@@ -21,6 +21,8 @@ use Artesaos\Restinga\Http\Format\Send\SendJson;
  * @property    string  birthdate_year      Ano do nascimento. 4 dígitos.
  * @property    array   address             Array com os atributos do endereço.
  * @property    string  billing_info		Dados de pagamento desse cliente.
+ * @property    string  creation_date       Data da Criação do Cliente.
+ * @property    string  creation_time       Hora da Criação do Cliente.
  */
 class Customer extends Resource
 {

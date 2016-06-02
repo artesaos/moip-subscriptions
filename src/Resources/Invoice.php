@@ -7,6 +7,19 @@ use Artesaos\Restinga\Http\Format\Receive\ReceiveJson;
 use Artesaos\Restinga\Http\Format\Receive\ReceiveJsonErrors;
 use Artesaos\Restinga\Http\Format\Send\SendJson;
 
+/**
+ * Class Invoice.
+ *
+ * @property    int     id                  ID da Fatura.
+ * @property    int     amount              Valor da Fatura.
+ * @property    array   creation_date       Data da Criação da Fatura.
+ * @property    array   plan                Plano Relacionado a Fatura.
+ * @property    array   items               Itens da Fatura.
+ * @property    array   status              Status atual da fatura.
+ * @property    string  subscription_code   Código da Assinatura.
+ * @property    int     occurrence          Ocorrência da fatura na assinatura (ex. 3 para a terceira fatura).
+ * @property    array   customer            Cliente referente à fatura.
+ */
 class Invoice extends Resource
 {
     // send and receive data in JSON.
