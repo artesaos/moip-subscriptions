@@ -18,7 +18,7 @@ use Artesaos\Restinga\Http\Format\Send\SendJson;
  * @property    array   duration            Duração do cupon.
  * @property    array   expiration_date     Data de expiração do cupon.
  * @property    int     max_redemptions     Número Máximo de vezes que o cupon pode ser usado.
- * @property    boolean in_use              Indica se o cupon está em uso.
+ * @property    bool    in_use              Indica se o cupon está em uso.
  * @property    array   creation_date       Data de criação do cupon.
  */
 class Coupon extends Resource
