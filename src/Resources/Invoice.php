@@ -43,21 +43,19 @@ class Invoice extends Resource
     // empty resource name when single item
     protected $item_root = null;
 
-    public function suspend()
+    /**
+     * Retry charging the invoice.
+     *
+     * @return bool
+     */
+    public function retry()
     {
-        return $this->makeRequest('put', true, '/suspend');
+        return $this->makeRequest('post', true, '/retry');
     }
 
-    public function activate()
-    {
-        return $this->makeRequest('put', true, '/activate');
-    }
-
-    public function cancel()
-    {
-        return $this->makeRequest('put', true, '/cancel');
-    }
-
+    /**
+     * @return array
+     */
     public function getPayments()
     {
         return $this->childResource(new Payment())->getAll();
