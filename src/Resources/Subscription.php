@@ -12,7 +12,7 @@ use Artesaos\Restinga\Http\Format\Send\SendJson;
  *
  * @property    string  code                Identificador da assinatura na sua aplicação.
  * @property    int     amount              Valor da assinatura (sobrescreve o valor do plano contratado).
- * @property    array   plan	            Node de informações do plano que será usado na assinatura.
+ * @property    array   plan                Node de informações do plano que será usado na assinatura.
  * @property    array   customer            Node de informações do cliente que será o assinante.
  * @property    array   creation_date       Data de Criação da Assinatura.
  * @property    string  status              Status do Plano.

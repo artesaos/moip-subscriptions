@@ -11,7 +11,7 @@ use Artesaos\Restinga\Http\Format\Send\SendJson;
  * Class Customer.
  *
  * @property    string  code                Identificador do cliente na sua aplicação.
- * @property    string  fullname	        Nome completo do cliente.
+ * @property    string  fullname            Nome completo do cliente.
  * @property    string  email               Email do cliente.
  * @property    string  cpf                 CPF do cliente.
  * @property    string  phone_area_code     Código de área do telefone do titular (DDD).
@@ -20,7 +20,7 @@ use Artesaos\Restinga\Http\Format\Send\SendJson;
  * @property    string  birthdate_month     Mês do nascimento. Válido 01 a 12.
  * @property    string  birthdate_year      Ano do nascimento. 4 dígitos.
  * @property    array   address             Array com os atributos do endereço.
- * @property    string  billing_info		Dados de pagamento desse cliente.
+ * @property    string  billing_info        Dados de pagamento desse cliente.
  * @property    string  creation_date       Data da Criação do Cliente.
  * @property    string  creation_time       Hora da Criação do Cliente.
  */
