@@ -14,16 +14,16 @@ A documentação do pacote é uma cópia da documentação oficial, que pode ser
 #### Status do Projeto
 Status atual da Cobertura do Pacote
 
-| Endpoint                            | Progresso Implementação    | Progresso Documentação |
-| ----------------------------------- | -------------------------- | ---------------------- |
-| `coupons` (Cupons)                  | 100%                       | 100%                   |
-| `plans` (Planos)                    | 100%                       | 0%                     |
-| `customers` (Clientes)              | 100%                       | 0%                     |
-| `subscriptions` (Assinaturas)       | 100%                       | 0%                     |
-| `- invoices` (Faturas)              | 75%                        | 0%                     |
-| `--- payments` (Pagamentos)         | 100%                       | 0%                     |
-| `--- retries` (Re-rentativas)       | 0%                         | 0%                     |
-| `users/preferences` (Preferências)  | 0%                         | 0%                     |
+| Endpoint | Implementação | Exemplos |
+| -------- | ------------- | ------------ |
+| `coupons` (Cupons) | 100% | 0% |
+| `plans` (Planos)   | 100% | 0%   |
+| `customers` (Clientes) | 100% | 0% |
+| `subscriptions` (Assinaturas) | 100% | 0% |
+| `- invoices` (Faturas) | 100% | 0% |
+| `--- payments` (Pagamentos) | 100% | 0% |
+| `--- retries` (Re-rentativas) | 100% | 0% |
+| `users/preferences` (Preferências) | 0% | 0% |
 
 
 #### Conteúdo da Documentação
@@ -101,3 +101,5 @@ if(!$plan->save()) {
 ```
 
 ### Exemplos
+
+@todo
