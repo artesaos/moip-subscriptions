@@ -28,9 +28,9 @@ Status atual da Cobertura do Pacote
 
 #### Conteúdo da Documentação
 - [Primeiros Passos](#primeiros-passos)
- - [Instalação](#instalacao) 
- - [Configuração](#configuracao)
- - [Intruções Gerais](#instrucoes-gerais)
+ - [Instalação](#instalação) 
+ - [Configuração](#configuração)
+ - [Intruções Gerais](#instruções-gerais)
  - [Gerenciamento de Erros](#gerenciamento-de-erros)
 - [Cupons de Desconto](#cupons-de-desconto) 
 
