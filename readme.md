@@ -1,13 +1,17 @@
 ## MoIP Subscriptions
 
+### Introdução
 **MoIP Assinaturas** (Pagamentos Recorrentes) é um produto da **[MoIP](http://moip.com.br)**.
 
 A Presente biblioteca cliente visa facilitar a integração / implementação da API de Assinaturas em projetos PHP.
 
-### Sobre o Projeto
+#### Sobre o Projeto
 O Projeto utiliza o framework ActiveResource **[Restinga](https://github.com/artesaos/restinga)**.
 
-### Status
+#### Documentação Oficial
+A documentação do pacote é uma cópia da documentação oficial, que pode ser encontra em [http://dev.moip.com.br/assinaturas-api/](http://dev.moip.com.br/assinaturas-api/)
+
+#### Status do Projeto
 Status atual da Cobertura do Pacote
 
 | Endpoint                            | Progresso Implementação    | Progresso Documentação |
@@ -22,10 +26,19 @@ Status atual da Cobertura do Pacote
 | `users/preferences` (Preferências)  | 0%                         | 0%                     |
 
 
+#### Conteúdo da Documentação
+- [Primeiros Passos](#primeiros-passos)
+ - [Instalação](#instalacao) 
+ - [Configuração](#configuracao)
+ - [Intruções Gerais](#instrucoes-gerais)
+ - [Gerenciamento de Erros](#gerenciamento-de-erros)
+- [Cupons de Desconto](#cupons-de-desconto) 
 
 
 
-### Instalação
+### Primeiros Passos
+
+#### Instalação
 Para instalar a biblioteca **moip-subscriptions**, você deve utilizar o composer para incluí-la como dependência em seu projeto.
 
 ```
@@ -33,7 +46,7 @@ composer require artesaos/moip-subscriptions
 ```
 
 
-### Configuração
+#### Configuração
 
 Após instalar a biblioteca, você precisará configurar seu token e chave da API, bem como indicar se as chamadas serão feitas no ambiente de produção ou não:
 
@@ -50,13 +63,13 @@ $production = false;
 MoIPSubscriptions::setCredentials($token, $key, $production);
 ```
 
-### Regra Geral:
+#### Instruções Gerais:
 
 Cada recurso / classe da API funciona praticamente da mesma forma, porem todos os métodos disponíveis estão (ou serão) documentados nesse manual.
 Alguns métodos herdados da biblioteca Restinga como `$resource->destroy()` mesmo que disponíveis, não fazem efeito contra a API.
 
 
-### Gerenciamento de Erros
+#### Gerenciamento de Erros
 
 Para gerenciar os erros que a API poderá exibir, você pode utilizar o método `->hasErrors()` para descobrir se houve algum erro na requisição, e o método `->getErrors()` que por sua vêz tem métodos como `->first()` e `->all()`.
 
@@ -87,7 +100,9 @@ if(!$plan->save()) {
 }
 ```
 
-## Cupons de Desconto
+
+
+### Cupons de Desconto
 
 Cupons de desconto são uma forma de oferecer promoções ou condições especiais a um cliente.
 
